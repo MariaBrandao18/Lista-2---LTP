@@ -72,3 +72,24 @@ class ContaPoupanca(ContaBancaria):
 
     def consultar_saldo(self):
         return self.saldo + (self.saldo * self.juros)
+
+conta_corrente = ContaCorrente(conta=12345, titular="João Silva", saldo=500, chequeEspecial=1000)
+conta_corrente.infoDaConta()
+conta_corrente.depositar(300)
+print("Depósito de R$ 300,00:")
+conta_corrente.infoDaConta()
+conta_corrente.sacar(900)
+print("Saque de R$ 900,00:")
+conta_corrente.infoDaConta()
+conta_corrente.sacar(1500)
+print("Saque de R$ 1500,00:")
+conta_corrente.infoDaConta()
+
+conta_poupanca = ContaPoupanca(conta=54321, titular="Maria Souza", saldo=1000)
+conta_poupanca.infoDaConta()
+conta_poupanca.depositar(200)
+print("Depósito de R$ 200,00 na conta Poupança:")
+conta_poupanca.infoDaConta()
+conta_poupanca.sacar(50)
+print("Saque de R$ 50,00 na conta Poupança:")
+conta_poupanca.infoDaConta()
