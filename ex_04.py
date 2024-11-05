@@ -1,3 +1,6 @@
+#Aluna: Maria Eduarda Rodrigues Brandão    RA: 22402382
+#Aluna: Júlia Coelho Rodrigues             RA: 22408388
+
 from abc import ABC, abstractmethod
 
 class ContaBancaria(ABC):
